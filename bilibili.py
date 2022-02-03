@@ -10,7 +10,7 @@ import time
 class bilibili:
     def __init__(self):
         self.cookie = {
-            "cookie": "l=v; innersign=0; buvid3=19429940-A240-3176-1551-3E92E1C3632E47099infoc; i-wanna-go-back=-1; b_lsid=FEDE10B5A_17EB622E5E5; _uuid=7768A8AF-4376-8E67-7D26-BC87A174879947477infoc; buvid4=5B80FF20-4373-037D-A5C3-6D97D6DE170548122-022020200-LKyJvix6SQiy+xdWd+8GeQ%3D%3D; fingerprint=a1dcecb0c55bce86f1cf070376958691; buvid_fp_plain=undefined; buvid_fp=0ba4db56d4578793a0fd1c77281c8b3b; SESSDATA=d9aac71d%2C1659285276%2Ca4165%2A21; bili_jct=54b791557e96db4131ada592b8027fcc; DedeUserID=380058213; DedeUserID__ckMd5=606a83eea588e3b0; sid=7gfmtbdf; b_ut=5; PVID=1; CURRENT_BLACKGAP=0; CURRENT_FNVAL=80; bp_video_offset_380058213=622109223804740000; bp_t_offset_380058213=622320261320552107"
+            "cookie": "填入账号的cookie"
         }
         self.head = {
             "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36"
@@ -50,6 +50,7 @@ class bilibili:
         # 2 图片动态
         # 4 文字动态
         # 1 转发动态
+        # 8 视频动态
         # result = self.get_dym_one(uid)
         # print(result['desc']['type'])
         return result['desc']['type']
